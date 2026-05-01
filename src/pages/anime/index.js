@@ -260,7 +260,7 @@ const Anime = () => {
               Failed to fetch list
             </div>
             <div className="text-stone-300/80 text-base mt-1">
-              There was an error, or you may have been rate-limited. Try again in a bit.
+              An error has occurred. You may have been rate limited, or AniList is down. Please try again later!
             </div>
           </div>
         )}

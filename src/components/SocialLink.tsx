@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { FaGithub, FaTwitter, FaSteam, FaLastfm } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaSteam } from 'react-icons/fa';
 import { SiAnilist, SiOsu } from "react-icons/si";
 import { motion } from 'framer-motion';
 
@@ -17,8 +17,6 @@ export default function SocialLink({ href, tooltipText, social }) {
         return <SiOsu className="duration-300" />;
       case 'AniList':
         return <SiAnilist className="duration-300" />;
-      case 'Last.fm':
-        return <FaLastfm className="duration-300" />;
       default:
         return null;
     }

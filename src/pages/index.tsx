@@ -16,7 +16,6 @@ export default function Home() {
           <SocialLink href="https://twitter.com/accmpy" social="Twitter" tooltipText="@accmpy" />
           <SocialLink href="https://osu.ppy.sh/users/19054376" social="osu!" tooltipText="@intter" />
           <SocialLink href="https://anilist.co/user/intter" social="AniList" tooltipText="@intter" />
-          <SocialLink href="https://www.last.fm/user/intter" social="Last.fm" tooltipText="@intter" />
         </div>
         <Navbar />
         <Lanyard showUsername={false} showStatusDot={false} showAlbumArt={true} />

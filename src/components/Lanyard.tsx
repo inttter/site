@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import { consola } from 'consola';
-import { FaSpotify } from 'react-icons/fa';
+import { Disc3 } from 'lucide-react';
 
 function Lanyard({ showUsername = true, showStatusDot = true, showAlbumArt = true }) {
   const [status, setStatus] = useState('Finding status...');
@@ -148,20 +148,20 @@ function Lanyard({ showUsername = true, showStatusDot = true, showAlbumArt = tru
         <div>
           <div className="mt-3 flex items-center text-sm font-medium text-stone-300 animate-blurred-fade-in duration-700">
             <span className="flex items-center">
-              <FaSpotify className="mr-1 text-green-500" /> 
-              Listening to Spotify
+             <Disc3 size={15} className="mr-1 text-green-500 animate-spin duration-3000" />
+              Now listening to...
             </span>
           </div>
           <div className="group mt-4">
-            <div className="flex items-center px-2 py-2 -mt-3 rounded-lg transition duration-300 ease-in-out -mx-2.5 md:-mx-2">
+            <div className="flex items-center px-2 py-2 -mt-3 rounded-lg transition duration-300 ease-in-out -mx-1">
               <Image
                 src={spotifyAlbumArt}
                 alt="Album Cover"
                 width={70}
                 height={70}
-                className="rounded-md border border-neutral-800 animate-blurred-fade-in duration-1000"
+                className="rounded-md border border-neutral-800 animate-blurred-fade-in duration-1000 -rotate-4"
               />
-              <div className="w-[240px] md:w-[460px] ml-2">
+              <div className="w-[240px] md:w-[460px] ml-2.5">
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}

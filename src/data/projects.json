@@ -16,7 +16,7 @@
     {
       "name": "Notetxt",
       "description": "A note-taker site with a focus on minimalism and simplicity.",
-      "link": "https://notetxt.xyz",
+      "link": "https://notetxt.vercel.app/",
       "github": "https://github.com/inttter/notetxt",
       "tags": ["nextjs", "notes", "markdown", "notetaking"]
     },

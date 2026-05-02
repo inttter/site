@@ -14,7 +14,7 @@ class MyDocument extends Document {
     const { isPostPage, postSlug, urlPath } = this.props;
     const post = this.props.__NEXT_DATA__.props.pageProps.post || {};
 
-    const siteUrl = 'https://iinter.me';
+    const siteUrl = 'https://intter.vercel.app';
     const defaultImage = `${siteUrl}/external/og.png`;
     const defaultDescription = `inter's personal site.`;
 
@@ -49,7 +49,7 @@ class MyDocument extends Document {
             <>
               {/* Meta tags for non-post pages */}
               <meta property="og:url" content={ogUrl} />
-              <meta property="og:title" content="iinter.me" />
+              <meta property="og:title" content="Inter" />
               <meta property="og:image" content={defaultImage} />
               <meta property="og:description" content={defaultDescription} />
               <meta name="description" content={defaultDescription} />
